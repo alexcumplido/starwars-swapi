@@ -19,7 +19,7 @@
 
 @font-face {
   font-family: "Stars";
-  src: url("./font/star.woff") format("woff");
+  src: url("../font/star.woff") format("woff");
 }
 
 *,
@@ -36,7 +36,7 @@
 body {
   margin: 0;
   font-size: 1rem;
-  background: url("assets/stars-3750824.png") no-repeat fixed;
+  background: url("../assets/stars-3750824.png") no-repeat fixed;
   overflow-x: hidden;
 }
 
