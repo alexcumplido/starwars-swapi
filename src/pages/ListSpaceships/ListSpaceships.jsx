@@ -1,6 +1,6 @@
-import axios from 'axios';
-import { useState, useEffect, useRef } from 'react';
-import { ListLinks } from '../../components/ListLinks/ListLinks.js';
+import axios from "axios";
+import { useState, useEffect, useRef } from "react";
+import { ListLinks } from "../../components/ListLinks/ListLinks.jsx";
 
 export function ListSpaceships() {
   const [dataApi, setDataApi] = useState([]);
@@ -9,17 +9,20 @@ export function ListSpaceships() {
 
   const observer = useRef(
     new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) setPage((page) => ++page);
+      if (entries[0].isIntersecting) setPage((page) => ++page);
     })
-  )
+  );
 
-  const fecthSwapi = () => {  
+  const fecthSwapi = () => {
     //Optional url in case original fails https://swapi.py4e.com/
-    axios.get(`https://swapi.dev/api/starships/?page=${page}`)
-      .then(response => setDataApi((dataApi) => [...dataApi, ...response.data.results]))
-      .catch(error => console.log(error));
-  }
-  
+    axios
+      .get(`https://swapi.dev/api/starships/?page=${page}`)
+      .then((response) =>
+        setDataApi((dataApi) => [...dataApi, ...response.data.results])
+      )
+      .catch((error) => console.log(error));
+  };
+
   useEffect(() => {
     if (page < 5) fecthSwapi();
   }, [page]);
@@ -31,11 +34,8 @@ export function ListSpaceships() {
 
     return () => {
       if (currentElement) currentObserver.unobserve(currentElement);
-    }
+    };
   }, [element]);
 
-  return(
-    <ListLinks data={dataApi} setElement={setElement}/>
-  );
+  return <ListLinks data={dataApi} setElement={setElement} />;
 }
-

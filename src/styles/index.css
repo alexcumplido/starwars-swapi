@@ -1,0 +1,49 @@
+:root {
+  --white-light: #ffffff;
+  --white: #f4f5f5;
+  --yellow: #ebd300;
+  --red: #ff0000;
+  --red-dark: #9e4f60;
+  --blue-light: #3f6cab;
+  --blue-midle: #106ae0;
+  --grey-light: #cccccc;
+  --grey-standard: #999999;
+  --grey-middle: #474747;
+  --grey-midle-dark: #353434;
+  --grey-upper-dark: #7a7a7a;
+  --grey-dark: #171717;
+  --dark-light: #282727;
+  --dark: #000000;
+  --card-border: 0.15rem solid var(--red-dark);
+}
+
+@font-face {
+  font-family: "Stars";
+  src: url("./font/star.woff") format("woff");
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: "Stars", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  background: url("assets/stars-3750824.png") no-repeat fixed;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--grey-light);
+}
+
+a:hover {
+  color: var(--grey-light);
+}
