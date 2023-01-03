@@ -1,0 +1,46 @@
+.wrapper {
+  height: 80vh;
+  background: url("../../assets/homeBackground.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn__spaceships {
+  position: absolute;
+  top: 25rem;
+  left: 2rem;
+  width: 14rem;
+  height: 4rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: var(--white);
+  border-color: var(--blue-midle);
+  background-color: var(--blue-midle);
+}
+
+.btn__spaceships:hover {
+  box-shadow: 0 3px 6px 0 var(--dark);
+  font-weight: bolder;
+}
+
+.btn_spaceships__notAuth:hover::after {
+  position: absolute;
+  top: 0.2rem;
+  left: 14rem;
+  width: 14rem;
+  content: "Require previous login";
+  padding: 1rem;
+  border-radius: 0.25rem;
+  color: var(--red);
+  background: var(--dark);
+}
+
+.home__banner {
+  display: block;
+  width: 30rem;
+  position: absolute;
+  bottom: 1rem;
+}

@@ -1,0 +1,21 @@
+.list__links {
+  margin: 5rem auto;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.link__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  color: var(--grey-standard);
+  background-color: var(--grey-dark);
+}
+
+.link__item:hover {
+  color: var(--white);
+  background-color: var(--grey-midle-dark);
+}

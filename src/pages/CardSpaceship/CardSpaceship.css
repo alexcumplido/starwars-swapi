@@ -1,0 +1,42 @@
+.item__spaceship {
+  width: 60vw;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: var(--grey-upper-dark);
+}
+
+.item__img {
+  border-bottom: 0.15rem solid var(--red-dark);
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+.card__description {
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-radius: 0.25rem;
+  background-color: var(--dark-light);
+}
+
+.card__description p,
+.card__description ul {
+  flex: 1;
+}
+
+.card__description ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
