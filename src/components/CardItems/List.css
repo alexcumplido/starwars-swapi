@@ -1,0 +1,50 @@
+.card__wrapper {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card__pilot,
+.card__film {
+  max-width: 30%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 0.15rem solid var(--red-dark);
+  background-color: var(--dark-light);
+}
+
+.card__wrapper a {
+  font-weight: 600;
+  color: var(--grey-upper-dark);
+}
+
+.card__wrapper a:hover {
+  color: var(--red-dark);
+}
+
+.card__pilot img,
+.card__film img {
+  max-width: 100%;
+}
+
+.card__pilot ul {
+  padding-bottom: 1.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.card__film {
+  gap: 0;
+}
+
+.card__film a {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+}

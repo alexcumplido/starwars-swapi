@@ -1,0 +1,10 @@
+.social {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.social img {
+  width: 1.5rem;
+}

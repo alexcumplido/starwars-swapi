@@ -1,0 +1,134 @@
+.modal__form {
+  position: relative;
+  top: 2rem;
+  width: 30rem;
+  max-width: 90%;
+  height: 31rem;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--grey-dark);
+}
+
+.modal__logo {
+  max-width: 70%;
+  margin-top: -2rem;
+}
+
+.inputs__wrapper h2 {
+  color: var(--yellow);
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.inputs__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.inputs__wrapper input {
+  width: 80%;
+  padding: 0.5rem;
+}
+
+.inputs__wrapper input:hover,
+.inputs__wrapper input:focus {
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+  caret-color: var(--yellow);
+  background-color: var(--grey-middle);
+}
+
+.inputs__wrapper input:focus-visible {
+  outline-style: none;
+  outline-width: none;
+}
+
+.error {
+  width: 80%;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--red);
+}
+
+.modal__form__cta {
+  position: relative;
+  width: 80%;
+  padding: 0.5rem;
+  border: none;
+  color: var(--white);
+  border-radius: 3px;
+  background-color: var(--grey-middle);
+}
+
+.modal__form__cta:hover {
+  background-color: var(--blue-light);
+}
+
+.cta__Signup {
+  width: 75%;
+  background: none;
+  position: absolute;
+  bottom: 5%;
+  color: var(--yellow);
+}
+
+.cta__Signup:hover {
+  border: 1px solid var(--yellow);
+  background: none;
+}
+
+.notVerified::after {
+  position: absolute;
+  top: 3rem;
+  left: 0rem;
+  width: 100%;
+  font-size: 0.75rem;
+  content: "Credentials are incorrect. Passwords are case sensitive.";
+  padding: 1rem;
+  border: 1px solid var(--red);
+  border-radius: 0.25rem;
+  color: var(--red);
+  background: none;
+}
+
+.checkbox__policy {
+  width: 80%;
+  color: var(--grey-standard);
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.checkbox__policy input {
+  width: 10%;
+}
+
+.modal__btn__close {
+  width: 2rem;
+  height: 2rem;
+  color: var(--grey-middle);
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 50%;
+  background: none;
+}
+
+.modal__btn__close:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
