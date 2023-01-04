@@ -13,7 +13,14 @@ header {
 .header__superior {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 750px) {
+  .header__superior {
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
