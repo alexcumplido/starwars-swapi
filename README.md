@@ -1,8 +1,8 @@
 # SWAPI - Star Wars Api
 
-This website displays information about the Star Wars universe, including spaceships, films, and pilots. Data is fetched from https://swapi.dev/ and https://starwars-visualguide.com/#/ APIs. Routes are protected from non-authenticated users via react-router, storing sessions in local storage for that purpose.
+Check the [deployed project here](https://starwars-swapi.vercel.app/). This website displays information about the Star Wars universe, including spaceships, films, and pilots. Data is fetched from https://swapi.dev/ and https://starwars-visualguide.com/#/ APIs. Routes are protected from non-authenticated users via react-router, storing sessions in local storage for that purpose.
 
-## Requirements 🎯
+## User flow 🎯
 
 - Register a valid name, password and email.
 - Login and visualize spaceships data.
