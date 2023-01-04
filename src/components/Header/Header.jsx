@@ -55,15 +55,6 @@ export function Header({ showSignup, showLogin }) {
               SpaceShips{" "}
             </Link>
           </li>
-          <li>
-            <a
-              className="header__link"
-              href="https://github.com/alexcumplido/sprint8/tree/develop#demo"
-              target="_blank"
-            >
-              Code
-            </a>
-          </li>
         </ul>
       </nav>
     </header>
